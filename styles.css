@@ -1,0 +1,466 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+    font-family:  'Roboto Condensed', sans-serif;
+}
+
+body > *{
+    background-image: url(img/fondo\ comida.jpg);
+    border-radius: 4px;
+    text-align: center;       
+}
+
+.grid-container{
+    width: 100%;
+    display: grid;
+    gap: 3px; 
+    grid-template-areas: "header" "navbar" "main" "sidebar" "footer";
+}
+
+a { 
+    text-decoration: none;
+    color: rgb(3, 3, 3);
+    text-shadow: black;
+}
+
+a :hover  {
+    color: blue;
+    zoom: 130%;
+}
+
+/* Header */
+
+.header{
+    display: flex;
+    grid-area: header;  
+    justify-content:space-around;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    height: 110px;
+    margin: 3px;
+    border: 1.5px solid black;
+    border-radius: 4px;
+}
+
+h3 {
+    font-size: smaller;
+}
+
+.imgLogo {
+    height: 70px;
+    margin-left: 5px;
+}
+
+.whp {
+    height: 40px;
+}
+/* nav */
+
+.tituloNav {
+    display: flex;
+    justify-content: center;
+    /* margin: 10px; */
+    /* margin-left: 5%;
+    margin-right: 5%; */
+}
+
+.headerImg {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+}
+
+/* navegacion */
+
+.navbar{
+    grid-area: navbar;
+    margin: 3px;   
+    font-size: larger;
+    border: 0.5px solid black;
+    border-radius: 4px;  
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+h1 {
+    font-size:x-large;
+    border: 0.5px solid black;
+}
+
+
+/* main */
+.main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    grid-area: main;
+    /* background-color: rgb(140, 231, 144); */
+    margin: 3px;
+    border-radius: 4px;
+    
+}
+
+.conteinerImg .imgMain {
+    width: 60vw;
+    padding: 3px;
+}
+
+article {
+    margin: 10px;
+    background-color:  rgb(51, 177, 139);
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/* sidebar */
+
+.sidebar{
+    grid-area: sidebar;
+    margin: 3px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+
+.imgaside {
+    width: 80vw;
+}
+
+.linkPromos {
+    font-size:x-large;
+    color: rgb(0, 0, 0);
+    position:absolute;
+    top: 5vw;
+    left: 10vw;
+    color: rgb(44, 19, 153); 
+}
+
+.linkPromos :hover {
+    color: blue;
+    zoom: 130%;    
+}
+
+/* footer */
+
+.footer{
+    grid-area: footer;
+    margin: 3px;
+    border-top: 0.5px solid black;
+}
+.redes1 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+.redes2 {
+   
+    display: flex;
+    justify-content: space-around;
+}
+
+.contactos {
+    font-size: larger;
+    margin-top: 10px;
+}
+.footer2 {
+    display: none;
+}
+
+/* aqui comienza estilos para formulario */
+
+.formulario {
+  padding: 5vh;
+}
+.tituloContacto {
+    font-size: larger;
+
+}
+/* estilos para carta */
+
+.titulo-carta {
+    font-size: larger;
+}
+.carta {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 30px 2px;
+}
+.imgCarta {
+    width: 70vw;
+    height: 200px;
+}
+.carta__menu {
+    width: 200px;
+    margin: auto;    
+}
+.carta__menu p {
+    margin: 15px;
+}
+/* estilo Quienes somos */
+
+.h1__quienes {
+    border-radius: 4px;
+    background-color:rgb(51, 177, 139) ;
+}
+.img__cañada {
+    width: 70vw;
+    
+}
+.p__quienes2 {
+    background-color:rgb(51, 177, 139) ;
+    border-radius: 4px;
+    margin: 4px;
+}
+.img__cañada {
+    margin: 3px;
+}
+.imgStaff {
+    margin-top: 8px;
+    width: 70vw;
+}
+.form__nuestro {
+    margin: 3px;
+}
+
+/* Telefonos y sucursales */
+
+.local1 {
+    margin: 20px;
+    border: 1px dotted black;
+    border-radius: 4px;
+}
+.local2 {
+    margin: 20px ;
+    border: 1px dotted black;
+    border-radius: 4px;
+}
+
+
+
+
+/* version escritorio */
+
+@media only screen and (min-width:1024px)
+
+ {
+     /* Index */
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    html{
+        height: 100%;
+    }
+
+    body{
+        min-height: 100%;
+       
+        font-family:  'Roboto Condensed', sans-serif;     
+    }
+
+    body > *{
+        /* background-color: blue; */
+        background-image: url(./img/fondo\ comida.jpg);
+        border-radius: 4px;
+        text-align: center;    
+       
+    }
+    .grid-container{
+        width: 1024px;
+        display: grid;
+        gap: 3px; 
+        grid-template-areas: "header header" "navbar navbar" "main sidebar" "footer footer"; 
+        grid-template-columns: 2 fr 1 fr
+    }
+/* header */
+    .header{
+        display: flex;
+        grid-area: header;  
+        justify-content:space-around;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+        height: 110px;
+        margin: 3px;
+        border: 1.5px solid black;
+        border-radius: 4px;
+    }
+    .headerImg {
+        display: none;
+    }
+/* navegacion */
+
+   .nav {
+       display: flex;   
+       justify-content:space-around;
+   }
+   /* main */
+.article {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+/* aside */
+.linkPromos {
+    
+    font-size:x-large;
+    color: rgb(0, 0, 0);
+    position:absolute;
+    top: 230px;
+    left: 710px;
+    color: rgb(44, 19, 153); 
+
+}
+ 
+/* footer */
+
+.footer {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}.footer1 {
+    display: none;
+}
+
+
+.espacioFooter {
+    margin: 20px;
+}
+.homeImagen {
+    margin: 10px;
+}
+.footer2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+.sidebar {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.imgaside {
+    width: 25vw;
+    margin-right: 70px;
+}
+.linkPromos {
+    font-size:x-large;
+    color: rgb(0, 0, 0);
+    position:absolute;
+    top: 13vw;
+    left: 3vw;
+    color: rgb(44, 19, 153); 
+}
+.conteinerImg .imgMain {
+    width: 25vw;
+    padding: 3px;
+}
+
+/* carta */
+
+.carta {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    gap: 50px;
+    margin: 30px 2px;
+}
+.carta__menu {
+    width: 200px;
+    margin: auto;    
+    align-items: center;
+}
+.imgCarta {
+    width: 100%;
+    height: 200px;  
+}
+
+/* quienes somos */
+
+.quienes1 {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    /* height: 500px; */
+   
+}
+.img__cañada {
+    width: 30vw;
+    
+    
+}
+.article__quienes {
+    height: 100px;
+    font-size: larger;
+}
+.quienes2 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.frentebaru {
+    width: 70vw;
+}
+.p__quienes2 {
+    height: 80px;
+    align-items: center;
+    align-content: center;
+}
+.enviaCv {
+   background-color:rgb(51, 177, 139) ;
+}
+.quienes3 {
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.imgStaff {
+    width: 40vw;
+}
+.p__nuestro {
+    font-size: larger;
+   
+}
+
+/* telefonos y sucursales */
+
+.gridTelefonos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.local1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.local2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+
+
+}
