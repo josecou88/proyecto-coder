@@ -334,7 +334,8 @@ article {
     display: flex;
     justify-content:space-evenly;
     align-items: center;
-}.footer1 {
+}
+.footer1 {
     display: none;
 }
 
