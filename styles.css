@@ -307,11 +307,19 @@ article {
     }
 /* navegacion */
 
-   .nav {
-       display: flex;   
-       justify-content:space-around;
-   }
+.nav {
+    display: flex;   
+    justify-content:space-around;
+    position: fixed;
+    background-color: rgb(32, 216, 170);
+    opacity: 0.80;
+   width: 1024px;
+}
+  
    /* main */
+.main {
+    margin-top: 38px;
+}
 .article {
     margin-top: 10px;
     margin-bottom: 30px;
@@ -322,6 +330,7 @@ article {
     font-size:x-large;
     color: rgb(0, 0, 0);
     position:absolute;
+    margin-top: 30px;
     top: 230px;
     left: 710px;
     color: rgb(44, 19, 153); 
@@ -376,7 +385,9 @@ article {
 }
 
 /* carta */
-
+.titulo__carta {
+    margin-top: 45px;
+}
 .carta {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -395,7 +406,9 @@ article {
 }
 
 /* quienes somos */
-
+.h1__quienes {
+    margin-top: 45px;
+}
 .quienes1 {
     display: flex;
     align-items: center;
@@ -443,9 +456,11 @@ article {
 
 /* telefonos y sucursales */
 
+
 .gridTelefonos {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 45px;
 
 }
 .local1 {
@@ -461,7 +476,10 @@ article {
     align-items: center;
     padding: 20px;
 }
+/* contacto */
 
-
+.tituloContacto {
+    margin-top: 45px;
+}
 
 }
